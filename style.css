@@ -1,0 +1,775 @@
+
+/* ==============================
+   GENERAL STYLING
+============================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #111124;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    transition: 0.3s;
+}
+/* HOME SECTION */
+
+#home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 110px 8%;
+}
+
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    max-width: 1100px;
+    width: 100%;
+}
+
+.home-logo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-logo img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.home-content {
+    flex: 2;
+}
+
+.home-content h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.home-content h2 {
+    font-size: 22px;
+    color: #a99aff;
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.home-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+/* MOBILE LAYOUT */
+
+@media (max-width: 800px) {
+    .home-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .home-logo img {
+        max-width: 200px;
+    }
+
+    .home-buttons,
+    .social-links {
+        justify-content: center;
+    }
+
+    .home-content h1 {
+        font-size: 32px;
+    }
+}
+
+
+/* ==============================
+   NAVIGATION BAR
+============================== */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #191936;
+
+    padding: 18px 5%;
+
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    z-index: 1000;
+
+    border-bottom: 2px solid #34345c;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #a99aff;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #a99aff;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
+/* ==============================
+   GENERAL SECTIONS
+============================== */
+
+section {
+    padding: 110px 8%;
+    min-height: 100vh;
+    scroll-margin-top: 60px;
+}
+
+.section-content {
+    max-width: 1100px;
+    margin: auto;
+}
+
+section h2 {
+    font-size: 34px;
+    color: #a99aff;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    color: #aaaac5;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+
+/* ==============================
+   HOME SECTION
+============================== */
+
+#home {
+    display: flex;
+    align-items: center;
+    background-color: #17172e;
+}
+
+.home-content {
+    max-width: 850px;
+    margin: auto;
+}
+
+.welcome {
+    color: #a99aff;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+.home-content h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.home-content h1 span {
+    color: #a99aff;
+}
+
+.home-content h2 {
+    font-size: 24px;
+    color: #ccccdf;
+}
+
+.home-description {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #ccccdf;
+    max-width: 750px;
+}
+
+
+/* ==============================
+   HOME BUTTONS
+============================== */
+
+.home-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+
+    background-color: #8170df;
+    color: white;
+
+    padding: 14px 25px;
+
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #6553c4;
+    transform: translateY(-3px);
+}
+
+.secondary-btn {
+    background-color: transparent;
+    border: 2px solid #8170df;
+}
+
+.secondary-btn:hover {
+    background-color: #8170df;
+}
+
+
+/* ==============================
+   SOCIAL LINKS
+============================== */
+
+.social-links {
+    display: flex;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.social-links a {
+    color: #a99aff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    color: white;
+}
+
+
+/* ==============================
+   ABOUT ME
+============================== */
+
+#about {
+    background-color: #111124;
+}
+
+.about-content {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.about-text {
+    flex: 2;
+}
+
+.about-text p {
+    color: #ccccdf;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+.about-info {
+    flex: 1;
+
+    background-color: #20203e;
+
+    padding: 25px;
+
+    border-radius: 10px;
+    border-left: 4px solid #8170df;
+}
+
+.about-info h3 {
+    color: #a99aff;
+}
+
+.about-info p {
+    color: #ccccdf;
+    line-height: 1.6;
+}
+
+
+/* ==============================
+   EDUCATION
+============================== */
+
+#education {
+    background-color: #17172e;
+}
+
+.education-card {
+    background-color: #20203e;
+    padding: 30px;
+    border-radius: 10px;
+    border-left: 5px solid #8170df;
+}
+
+.education-card h3 {
+    color: #a99aff;
+    font-size: 25px;
+}
+
+.education-card h4 {
+    color: #ccccdf;
+}
+
+.education-card p,
+.education-card li {
+    color: #ccccdf;
+    line-height: 1.9;
+}
+
+
+/* ==============================
+   SKILLS
+============================== */
+
+#skills {
+    background-color: #111124;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.skill-card {
+    background-color: #20203e;
+
+    padding: 25px;
+
+    border-radius: 10px;
+    border-bottom: 3px solid #8170df;
+
+    transition: transform 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+.skill-card h3 {
+    color: #a99aff;
+}
+
+.skill-card p {
+    color: #ccccdf;
+    line-height: 1.8;
+}
+
+.skill-card ul {
+    padding-left: 20px;
+}
+
+.skill-card li {
+    color: #ccccdf;
+    margin-bottom: 12px;
+}
+
+
+/* ==============================
+   PROFESSIONAL STRENGTHS
+============================== */
+
+#strengths {
+    background-color: #17172e;
+}
+
+
+/* ==============================
+   PROJECTS
+============================== */
+
+#projects {
+    background-color: #111124;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.project-card {
+    background-color: #20203e;
+
+    border-radius: 10px;
+    padding: 25px;
+
+    border-top: 4px solid #8170df;
+
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-label {
+    color: #a99aff;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.project-card h3 {
+    color: #a99aff;
+    font-size: 23px;
+}
+
+.project-type {
+    color: #a99aff;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.project-card p,
+.project-card li {
+    color: #ccccdf;
+    line-height: 1.8;
+}
+
+.project-card h4 {
+    color: white;
+}
+
+.project-status {
+    display: inline-block;
+    background-color: #34345c;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.project-note {
+    margin-top: 35px;
+    color: #aaaac5;
+    text-align: center;
+    line-height: 1.7;
+}
+
+
+/* ==============================
+   WORK EXPERIENCE
+============================== */
+
+#experience {
+    background-color: #17172e;
+}
+
+.experience-card {
+    background-color: #20203e;
+
+    padding: 30px;
+    margin-bottom: 25px;
+
+    border-left: 4px solid #8170df;
+    border-radius: 8px;
+}
+
+.experience-card h3 {
+    color: #a99aff;
+    font-size: 23px;
+}
+
+.experience-card h4 {
+    color: white;
+}
+
+.experience-date {
+    color: #a99aff;
+    font-weight: bold;
+}
+
+.experience-card p,
+.experience-card li {
+    color: #ccccdf;
+    line-height: 1.8;
+}
+
+
+/* ==============================
+   CONTACT
+============================== */
+
+#contact {
+    background-color: #111124;
+}
+
+.contact-form {
+    background-color: #20203e;
+
+    padding: 35px;
+
+    border-radius: 10px;
+    border-left: 4px solid #8170df;
+
+    max-width: 650px;
+}
+
+.contact-form h3 {
+    color: #a99aff;
+}
+
+.contact-form p {
+    color: #ccccdf;
+    line-height: 1.8;
+}
+
+.contact-item {
+    margin-top: 25px;
+}
+
+.contact-item h4 {
+    color: #a99aff;
+}
+
+.contact-item a {
+    color: white;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+.contact-item a:hover {
+    color: #a99aff;
+}
+
+
+/* ==============================
+   BACK TO TOP BUTTON
+============================== */
+
+#back-to-top {
+    position: fixed;
+
+    bottom: 25px;
+    right: 25px;
+
+    width: 45px;
+    height: 45px;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: #8170df;
+    color: white;
+
+    font-size: 25px;
+    cursor: pointer;
+
+    display: none;
+
+    z-index: 999;
+}
+
+#back-to-top:hover {
+    background-color: #6553c4;
+    transform: translateY(-3px);
+}
+
+#back-to-top.show {
+    display: block;
+}
+
+
+/* ==============================
+   FOOTER
+============================== */
+
+footer {
+    text-align: center;
+
+    background-color: #191936;
+
+    padding: 25px;
+
+    border-top: 2px solid #34345c;
+}
+
+footer p {
+    color: #aaaac5;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* ==============================
+   TABLET RESPONSIVE DESIGN
+============================== */
+
+@media screen and (max-width: 1000px) {
+
+    .navbar {
+        padding: 18px 4%;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .navbar a {
+        font-size: 12px;
+    }
+
+}
+
+
+/* ==============================
+   MOBILE RESPONSIVE DESIGN
+============================== */
+
+@media screen and (max-width: 800px) {
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+
+        width: 100%;
+
+        flex-direction: column;
+        align-items: center;
+
+        padding-top: 20px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    .home-content h1 {
+        font-size: 38px;
+    }
+
+    .home-content h2 {
+        font-size: 20px;
+    }
+
+    .home-buttons {
+        flex-wrap: wrap;
+    }
+
+}
+
+
+/* ==============================
+   SMALL MOBILE SCREENS
+============================== */
+
+@media screen and (max-width: 600px) {
+
+    section {
+        padding: 120px 6% 70px;
+    }
+
+    section h2 {
+        font-size: 28px;
+    }
+
+    .home-content h1 {
+        font-size: 32px;
+    }
+
+    .home-content h2 {
+        font-size: 18px;
+    }
+
+    .home-description {
+        font-size: 15px;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .home-buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        text-align: center;
+    }
+
+    .contact-form {
+        padding: 25px;
+    }
+
+}
